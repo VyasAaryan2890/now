@@ -12,13 +12,13 @@
     <div class="header">
         <div class="nav">
             <h1>Portfolio</h1>
-                <ul class="link">
+                <ul class="link" id="li">
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Skill</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <img src="img/menu.png" alt="" class="menu" width="30px">
+                <img src="img/menu.png" alt="" class="menu" width="30px" id="men" onclick="main()">
         </div>
     </div>
 
@@ -67,5 +67,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var menu = document.getElementById("men");
+        var nav = document.getElementById("li");
+        
+        function main(){
+            nav.style.right="0px";
+            nav.style.transition=".5s";
+        }
+    </script>
 </body>
 </html>
